@@ -9,6 +9,5 @@ RUN unzip shree.zip
 RUN cp -rvf shree/* .
 RUN rm -rf shree shree.zip
 CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
-ENTRYPOINT ["bash","entrypoint.prod.sh"]
 EXPOSE 80
 
